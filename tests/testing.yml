@@ -1,0 +1,11 @@
+models:
+  - name: daily_aggregations
+    tests:
+      - unique_key:
+          columns:
+            - date
+      - not_null:
+          columns:
+            - daily_high
+            - daily_low
+            - total_volume
